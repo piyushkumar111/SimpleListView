@@ -35,14 +35,14 @@ class ListViewCell: UITableViewCell {
     
     func initialSetup() {
         label = UILabel(frame: contentView.frame)
-        label.isHidden = false
         contentView.addSubview(label)
         label.textAlignment = .left
         label.font = UIFont(name: label.font.fontName, size: 17)
         self.contentView.backgroundColor = .white
         
         imgview = UIImageView(frame: contentView.frame)
-        imgview.isHidden = true
+        imgview.clipsToBounds = true
+        imgview.contentMode = .scaleToFill
         contentView.addSubview(imgview)
     }
 

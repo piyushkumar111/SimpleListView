@@ -206,15 +206,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.imageView?.isHidden = false
             cell.label?.isHidden = true
             
-            if data == "" {
-
+            if data.isEmpty {
+                print("str is nil or empty")
             } else {
                 let url = URL(string: data)
                 
                 DispatchQueue.global().async {
-                    let data = try? Data(contentsOf: url!)
+                    let dataImage = try? Data(contentsOf: url!)
                     DispatchQueue.main.async {
-                        cell.imgview.image = UIImage(data: data!)
+                        if dataImage != nil {
+                            cell.imgview.image = UIImage(data: dataImage!)
+                        }
                     }
                 }
             }
