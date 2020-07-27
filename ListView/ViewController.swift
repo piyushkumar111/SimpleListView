@@ -177,9 +177,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let temp_obj = self.array_data_list[indexPath.row] as! NSDictionary
         let type = temp_obj.value(forKey: "type") as! String
         if type == "image" {
-            return 100
+            return 300
         }
-        return 50
+        return 100
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -223,6 +223,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         } else {
             cell.imageView?.isHidden = true
             cell.label?.isHidden = false
+            if data.isEmpty {
+                print("str is nil or empty")
+            } else {
+                cell.label.text = data
+            }
         }
         return cell
     }

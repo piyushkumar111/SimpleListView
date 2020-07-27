@@ -37,10 +37,11 @@ class ListViewCell: UITableViewCell {
         label = UILabel(frame: contentView.frame)
         contentView.addSubview(label)
         label.textAlignment = .left
+        label.numberOfLines = 20
         label.font = UIFont(name: label.font.fontName, size: 17)
         self.contentView.backgroundColor = .white
         
-        imgview = UIImageView(frame: contentView.frame)
+        imgview = UIImageView(frame: CGRect(x: 0, y: 0, width: self.contentView.frame.size.width, height: 300))
         imgview.clipsToBounds = true
         imgview.contentMode = .scaleToFill
         contentView.addSubview(imgview)
