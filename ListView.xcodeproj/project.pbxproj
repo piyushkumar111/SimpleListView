@@ -15,6 +15,7 @@
 		13FBDE6324CED143006AFC42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FBDE6124CED143006AFC42 /* LaunchScreen.storyboard */; };
 		13FBDE6E24CED144006AFC42 /* ListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBDE6D24CED144006AFC42 /* ListViewTests.swift */; };
 		13FBDE7924CED144006AFC42 /* ListViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBDE7824CED144006AFC42 /* ListViewUITests.swift */; };
+		13FBDE8724CEFC04006AFC42 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBDE8624CEFC04006AFC42 /* ListViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		13FBDE7424CED144006AFC42 /* ListViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FBDE7824CED144006AFC42 /* ListViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewUITests.swift; sourceTree = "<group>"; };
 		13FBDE7A24CED144006AFC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13FBDE8624CEFC04006AFC42 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				13FBDE5624CED140006AFC42 /* AppDelegate.swift */,
-				13FBDE5824CED140006AFC42 /* SceneDelegate.swift */,
-				13FBDE5A24CED140006AFC42 /* ViewController.swift */,
-				13FBDE5C24CED140006AFC42 /* Main.storyboard */,
-				13FBDE5F24CED143006AFC42 /* Assets.xcassets */,
-				13FBDE6124CED143006AFC42 /* LaunchScreen.storyboard */,
 				13FBDE6424CED144006AFC42 /* Info.plist */,
+				13FBDE5A24CED140006AFC42 /* ViewController.swift */,
+				13FBDE8624CEFC04006AFC42 /* ListViewCell.swift */,
+				13FBDE8824CEFEB4006AFC42 /* Views */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -126,6 +126,17 @@
 				13FBDE7A24CED144006AFC42 /* Info.plist */,
 			);
 			path = ListViewUITests;
+			sourceTree = "<group>";
+		};
+		13FBDE8824CEFEB4006AFC42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13FBDE5824CED140006AFC42 /* SceneDelegate.swift */,
+				13FBDE5C24CED140006AFC42 /* Main.storyboard */,
+				13FBDE5F24CED143006AFC42 /* Assets.xcassets */,
+				13FBDE6124CED143006AFC42 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13FBDE8724CEFC04006AFC42 /* ListViewCell.swift in Sources */,
 				13FBDE5B24CED140006AFC42 /* ViewController.swift in Sources */,
 				13FBDE5724CED140006AFC42 /* AppDelegate.swift in Sources */,
 				13FBDE5924CED140006AFC42 /* SceneDelegate.swift in Sources */,
@@ -366,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5PHK8ET8L7;
 				INFOPLIST_FILE = ListView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5PHK8ET8L7;
 				INFOPLIST_FILE = ListView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

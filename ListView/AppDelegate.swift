@@ -11,10 +11,24 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Create standard window on which all view controller
+        // will be appear.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // Create new vide controller for intial view
+        let mainViewController = ViewController()
+        
+        // Set the initial View Controller to our instance of ViewController
+        window?.rootViewController = mainViewController
+        
+        // Present the window
+        window?.makeKeyAndVisible()
+
         return true
     }
 
