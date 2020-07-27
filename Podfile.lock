@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.2.2)
+  - IHProgressHUD (0.1.5)
+  - Reachability (3.2)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - IHProgressHUD (from `https://github.com/Swiftify-Corp/IHProgressHUD.git`)
+  - Reachability (~> 3.2)
+  - Toast-Swift (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Reachability
+    - Toast-Swift
+
+EXTERNAL SOURCES:
+  IHProgressHUD:
+    :git: https://github.com/Swiftify-Corp/IHProgressHUD.git
+
+CHECKOUT OPTIONS:
+  IHProgressHUD:
+    :commit: a98fb50e366e46b70547121657d76b5096765d11
+    :git: https://github.com/Swiftify-Corp/IHProgressHUD.git
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  IHProgressHUD: 55de0cd62cd65832e0d0047324ab0ca59d0bba11
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: a0167e21eba0c2fea05b89bd4aa1540b784c014e
+
+COCOAPODS: 1.9.1

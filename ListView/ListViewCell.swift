@@ -11,6 +11,7 @@ import UIKit
 class ListViewCell: UITableViewCell {
 
     var label: UILabel!
+    var imgview: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,10 +35,15 @@ class ListViewCell: UITableViewCell {
     
     func initialSetup() {
         label = UILabel(frame: contentView.frame)
+        label.isHidden = false
         contentView.addSubview(label)
-        label.textAlignment = .center
+        label.textAlignment = .left
         label.font = UIFont(name: label.font.fontName, size: 17)
         self.contentView.backgroundColor = .white
+        
+        imgview = UIImageView(frame: contentView.frame)
+        imgview.isHidden = true
+        contentView.addSubview(imgview)
     }
 
 }
